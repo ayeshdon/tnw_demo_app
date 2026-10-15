@@ -11,21 +11,32 @@ An Android wallet demo with mock sign-in, three currency accounts, and account s
 
 ## How to run
 
-1. Clone this repository and open its directory:
+1. Clone this repository and change into the project directory:
 
    ```sh
-   git clone <repository-url>
-   cd TNWDEMOAPP
+   git clone https://github.com/ayeshdon/tnw_demo_app.git
+   cd tnw_demo_app
    ```
 
-2. Ensure Android SDK Platform 37 is installed and that `local.properties` points to your SDK. Android Studio can create this local-only file automatically when the project is opened.
-3. Build and test from the project root:
+2. Install Android SDK Platform 37 and Android SDK Build-Tools using Android Studio's SDK Manager. Set `ANDROID_HOME` to the SDK location (commonly `$HOME/Library/Android/sdk` on macOS). Alternatively, open the project in Android Studio; it can configure the local SDK path in the untracked `local.properties` file. Do not commit `local.properties`.
+3. From the project root, build, run the tests, and run Android Lint:
 
    ```sh
    ./gradlew testDebugUnitTest lintDebug assembleDebug
    ```
 
-4. In Android Studio, select the `app` run configuration and launch it on a device or emulator. Alternatively, install `app/build/outputs/apk/debug/app-debug.apk`.
+   The Gradle wrapper downloads the configured Gradle distribution automatically; no global Gradle installation is needed. A JDK 17+ installation is required. Android Studio's bundled JDK can be used.
+4. Start an API 24+ Android emulator from Android Studio's Device Manager, or connect an Android device with USB debugging enabled. In Android Studio select the `app` configuration and click **Run**, or install the generated APK:
+
+   ```sh
+   adb install -r app/build/outputs/apk/debug/app-debug.apk
+   ```
+
+To create a release build, run:
+
+```sh
+./gradlew assembleRelease
+```
 
 ## Demo credentials
 
