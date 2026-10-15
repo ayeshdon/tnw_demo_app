@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">TNWDemoApp</string>
+    <string name="app_title">My Wallet</string>
+
+    <!-- Login Screen -->
+    <string name="sign_in_subtitle">Sign in to view your accounts</string>
+    <string name="label_email_address">Email address</string>
+    <string name="label_password">Password</string>
+    <string name="action_show">Show</string>
+    <string name="action_hide">Hide</string>
+    <string name="action_login">Log in</string>
+    <string name="login_demo_hint">Demo: demo@example.com / password123</string>
+
+    <!-- Login Errors -->
+    <string name="error_missing_username">Enter your email address.</string>
+    <string name="error_missing_password">Enter your password.</string>
+    <string name="error_invalid_username">Enter a valid email address.</string>
+    <string name="error_incorrect_credentials">Incorrect email or password.</string>
+    <string name="error_unable_to_sign_in">Unable to sign in right now. Please try again.</string>
+
+    <!-- Wallet Screen -->
+    <string name="action_logout">Log out</string>
+    <string name="loading_accounts">Loading accounts…</string>
+    <string name="error_loading_accounts">Couldn\'t load your accounts.</string>
+    <string name="error_loading_accounts_retry">Couldn\'t load your accounts. Please try again.</string>
+    <string name="action_try_again">Try again</string>
+    <string name="empty_accounts">No wallet accounts are available.</string>
+    <string name="header_your_accounts">Your accounts</string>
+    <string name="subtitle_your_accounts">Select an account to view its recent activity.</string>
+    <string name="action_view_last_30_days">View last 30 days</string>
+    <string name="action_all_accounts">All accounts</string>
+    <string name="subtitle_statement">Statement · last 30 days</string>
+    <string name="loading_statement">Loading statement…</string>
+    <string name="error_loading_statement">Couldn\'t load this statement. Please try again.</string>
+    <string name="empty_transactions">No transactions in the last 30 days.</string>
+    <string name="label_balance">Balance %1$s</string>
+</resources>

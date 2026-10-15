@@ -4,7 +4,7 @@ import com.tnw.demoapp.data.remote.AuthApiService
 import kotlinx.coroutines.delay
 
 /**
- * Mock implementation of [com.tnw.demoapp.data.remote.AuthApiService] used for development and testing
+ * Mock implementation of AuthApiService used for development and testing
  * prior to REST API integration.
  */
 class MockAuthApiService : AuthApiService {
